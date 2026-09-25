@@ -44,8 +44,16 @@
         <section class="card form-card">
           <h3>입력 테스트</h3>
           <form id="demoForm">
-            <label for="nameInput">이름</label>
-            <input id="nameInput" type="text" placeholder="이름을 입력하세요" />
+            <div class="input-row">
+              <div class="input-group">
+                <label for="nameInput">이름</label>
+                <input id="nameInput" type="text" placeholder="이름을 입력하세요" />
+              </div>
+              <div class="input-group">
+                <label for="ageInput">나이</label>
+                <input id="ageInput" type="number" min="1" max="150" placeholder="나이를 입력하세요" />
+              </div>
+            </div>
             <button type="submit">제출</button>
           </form>
           <p id="resultText" class="result">입력 내용을 확인해보세요.</p>
