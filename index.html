@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테스트용 웹페이지</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>테스트용 웹페이지</h1>
+        <p>간단한 레이아웃과 인터랙션 예제입니다.</p>
+      </header>
+
+      <main class="content">
+        <section class="card hero">
+          <div>
+            <span class="badge">Demo</span>
+            <h2>메인 제목</h2>
+            <p>
+              이 페이지는 UI 확인, 레이아웃 점검, 또는 간단한 동작 테스트를
+              위한 샘플입니다.
+            </p>
+            <button id="helloBtn">버튼 클릭</button>
+          </div>
+        </section>
+
+        <section class="stats">
+          <div class="card stat">
+            <span class="label">카운트</span>
+            <strong id="countValue">0</strong>
+          </div>
+          <div class="card stat">
+            <span class="label">상태</span>
+            <strong>준비됨</strong>
+          </div>
+          <div class="card stat">
+            <span class="label">버전</span>
+            <strong>v1.0</strong>
+          </div>
+        </section>
+
+        <section class="card form-card">
+          <h3>입력 테스트</h3>
+          <form id="demoForm">
+            <label for="nameInput">이름</label>
+            <input id="nameInput" type="text" placeholder="이름을 입력하세요" />
+            <button type="submit">제출</button>
+          </form>
+          <p id="resultText" class="result">입력 내용을 확인해보세요.</p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
